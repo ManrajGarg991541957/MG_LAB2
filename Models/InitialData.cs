@@ -12,9 +12,9 @@ namespace MG_LAB2.Models
     {
         public static void DataPopulated(IApplicationBuilder app)
         {
-            Product_DBContext context = app.ApplicationServices
+            MyProductsContext context = app.ApplicationServices
                                     .CreateScope().ServiceProvider
-                                    .GetRequiredService<Product_DBContext>();
+                                    .GetRequiredService<MyProductsContext>();
             if (context.Database.GetPendingMigrations().Any())
             {
                 context.Database.Migrate();

@@ -8,9 +8,9 @@ namespace MG_LAB2.Models
 {
     public class EFProductRepository : IProductRepository
     {
-        private Product_DBContext context;
+        private MyProductsContext context;
 
-        public EFProductRepository(Product_DBContext ProductContext)
+        public EFProductRepository(MyProductsContext ProductContext)
         {
             context = ProductContext;
         }

@@ -27,7 +27,7 @@ namespace MG_LAB2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<Product_DBContext>(opts =>
+            services.AddDbContext<MyProductsContext>(opts =>
             {
                 opts.UseSqlServer(Configuration["ConnectionStrings:MBSConnStr"]);
             });

@@ -7,9 +7,9 @@ namespace MG_LAB2.Models
 {
     public class EFCategoryRepository : ICategoryRepository
     {
-        private Product_DBContext context;
+        private MyProductsContext context;
 
-        public EFCategoryRepository(Product_DBContext CategoryContext)
+        public EFCategoryRepository(MyProductsContext CategoryContext)
         {
             context = CategoryContext;
         }
